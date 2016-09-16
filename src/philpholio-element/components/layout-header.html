@@ -1,0 +1,22 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<dom-module id="layout-header">
+    <template>
+        <style>
+            :host {}
+
+        </style>
+        <paper-toolbar>
+            <paper-icon-button icon="menu" on-tap="menuAction"></paper-icon-button>
+            <div class="title">Title</div>
+            <paper-icon-button icon="more-vert" on-tap="moreAction"></paper-icon-button>
+        </paper-toolbar>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'layout-header',
+        });
+
+    </script>
+</dom-module>

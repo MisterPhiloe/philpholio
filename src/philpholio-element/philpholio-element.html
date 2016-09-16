@@ -1,27 +1,36 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-styles/typography.html">
+<link rel="import" href="../../bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="components/layout-header.html">
 
 <dom-module id="philpholio-element">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]</h2>
-  </template>
+    <template>
+        <style>
+            :host {
+                @apply(--paper-font-common-base);
+            }
 
-  <script>
-    Polymer({
+        </style>
+        <layout-header></layout-header>
+    </template>
 
-      is: 'philpholio-element',
+    <script>
+        Polymer({
 
-      properties: {
-        prop1: {
-          type: String,
-          value: 'philpholio-element',
-        },
-      },
+            is: 'philpholio-element',
 
-    });
-  </script>
+            properties: {
+                prop1: {
+                    type: String,
+                    value: 'philpholio-element',
+                },
+            },
+
+        });
+
+    </script>
 </dom-module>
