@@ -1,0 +1,7 @@
+{
+  "name": "philpholio",
+  "short_name": "philpholio",
+  "description": "portfolio management tool",
+  "start_url": "/",
+  "display": "standalone"
+}
